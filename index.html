@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+   
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+
+    <div id="popup-menu" class="popup-menu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+    
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="WebisteVideoDraft.mp4" type="video/mp4">
+ 
+        </video>
+    </div>
+
+    <header class="head" id="header">
+        <a class="logo" href="index.html"><strong>Matthew Holzer </strong>Portfolio<span></span></a>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">Menu ☰</div>
+        </div>
+    </header>
+
+    <div id="nameTitle">
+        <h1>Matthew Holzer</h1>
+        <p>Video Game Designer & Software Engineer</p>
+        <div class="nameLinks">
+            <a href="#home">RESUME</a>
+            <a href="#home"><img src="GitHub.png" alt="GitHub Icon">GITHUB</a>
+            <a href="#home"><img src="LinkedIN.png" alt="LinkedIn Icon">LINKEDIN</a>
+            <a href="#home"><img src="Email.png" alt="Email Icon">EMAIL</a>
+        </div>
+    </div>
+
+
+
+    <div id="about" class="AboutMe">
+        <div class="text">
+            <h2>About Me</h2>
+            <p>Hello! My name is Matthew Holzer and I am an aspiering Software Engineer and Video Game Developer.</p>
+            <p>I am currently a student at The College of New Jersey majoring in Computer Science with a minor in Digital and Creative Technology. I am involved in many clubs and activities on campus, such as Game Design Club, Association for Computing Machinery (ACM), Digit.all.TCNJ's Musical Theater of which I am the Lead Carpenter, and I am the president of TCNJ's chapter of the Kappa Theta Pi Professional Technology Fraternity. </p>
+        </div>
+
+        <div class="image">
+            <img src="Holzer_Matthew.png" alt="Matthew Holzer">
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
