@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Matthew Holzer Portfolio</title>
    
     <link rel="stylesheet" href="style.css">
    
     
 </head>
-<body>
+<body id="homePage">
 
     <div id="popup-menu" class="popup-menu">
-        <a href="#home" onclick="toggleMenu()">Home</a>
-        <a href="#about" onclick="toggleMenu()">About</a>
-        <a href="#services" onclick="toggleMenu()">Services</a>
-        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <div class="links">
+            <a href="#nameTitle" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+
+        <div class="icons" style="padding-bottom: 50px;">
+            <a href="MatthewHolzerResume.pdf" target="_blank">
+                <div class="iconContainer" >
+                    <img src="ResumeIcon.png" alt="Resume Icon">
+                </div>
+            </a>
+            <a href="https://github.com/Matthew0314" target="_blank">
+                <div class="iconContainer" >
+                    <img src="GitHub.png" alt="GitHub Icon">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                <div class="iconContainer" >
+                    <img src="LinkedIN.png" alt="LinkedIn Icon">
+                </div>
+            </a>
+            <a href="mailto:matthewh314@gmail.com">
+                <div class="iconContainer">
+                    <img src="Email.png" alt="Email Icon">
+                </div>
+            </a>
+        </div>
     </div>
     <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
     
-    <div class="video-container">
+    <div id="homeVideo" class="video-container">
         <video autoplay loop muted playsinline>
             <source src="WebisteVideoDraft.mp4" type="video/mp4">
- 
         </video>
     </div>
 
     <header class="head" id="header">
-        <a class="logo" href="index.html"><strong>Matthew Holzer </strong>Portfolio<span></span></a>
+        <a class="logo" href="index.html"><strong>Matthew Holzer</strong> Portfolio<span></span></a>
         <div class="menu">
             <div class="menu-icon" onclick="toggleMenu()">Menu ☰</div>
         </div>
@@ -35,28 +59,85 @@
 
     <div id="nameTitle">
         <h1>Matthew Holzer</h1>
-        <p>Video Game Designer & Software Engineer</p>
+        <p>Video Game Developer & Software Engineer</p>
         <div class="nameLinks">
-            <a href="#home">RESUME</a>
-            <a href="#home"><img src="GitHub.png" alt="GitHub Icon">GITHUB</a>
-            <a href="#home"><img src="LinkedIN.png" alt="LinkedIn Icon">LINKEDIN</a>
-            <a href="#home"><img src="Email.png" alt="Email Icon">EMAIL</a>
+            <a href="MatthewHolzerResume.pdf" target="_blank"><img src="ResumeIcon.png" alt="Resume Icon">RESUME</a>
+            <a href="https://github.com/Matthew0314" target="_blank"><img src="GitHub.png" alt="GitHub Icon">GITHUB</a>
+            <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank"><img src="LinkedIN.png" alt="LinkedIn Icon">LINKEDIN</a>
+            <a href="mailto:matthewh314@gmail.com"><img src="Email.png" alt="Email Icon">EMAIL</a>
         </div>
     </div>
 
 
+    <div class="TextWrap">
+        <div id="about" class="AboutMe">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>Hello! My name is Matthew Holzer and I am an aspiering Software Engineer and Video Game Developer.</p>
+                <p>I am currently a student at The College of New Jersey majoring in Computer Science with a minor in Digital and Creative Technology. I am involved in many clubs and activities on campus, such as Game Design Club, Association for Computing Machinery (ACM), Digit.all, TCNJ's Musical Theater of which I am the Lead Carpenter, and I am the president of TCNJ's chapter of the Kappa Theta Pi Professional Technology Fraternity. </p>
+            </div>
 
-    <div id="about" class="AboutMe">
-        <div class="text">
-            <h2>About Me</h2>
-            <p>Hello! My name is Matthew Holzer and I am an aspiering Software Engineer and Video Game Developer.</p>
-            <p>I am currently a student at The College of New Jersey majoring in Computer Science with a minor in Digital and Creative Technology. I am involved in many clubs and activities on campus, such as Game Design Club, Association for Computing Machinery (ACM), Digit.all.TCNJ's Musical Theater of which I am the Lead Carpenter, and I am the president of TCNJ's chapter of the Kappa Theta Pi Professional Technology Fraternity. </p>
+            <div class="image">
+                <img src="Holzer_Matthew.png" alt="Matthew Holzer">
+            </div>
+            
         </div>
 
-        <div class="image">
-            <img src="Holzer_Matthew.png" alt="Matthew Holzer">
+        <div id="projects" class="Projects">
+            <h3>Projects</h3>
+            <div id="project1" class="projectContainer">
+                <div class="image">
+                    <img src="GameGridHome.png" alt="WTMMTS">
+                </div>
+                <div class="text">
+                    <h4>Where The Moon Meets The Sun</h4>
+                    <p>Independent project where the player will strategically maneuver their units to defeat opposing enemy units. Each map presents different objectives, such as routing all enemies, defeating the boss unit, or safely moving all units to the escape point. Players must balance completing these objectives with the challenge of preventing their units from falling, as when a unit dies they are gone for good. However, fallen units can be utilized to provide stat boosts and other benefits to surviving units in future maps. The game offers a compelling blend of tactical decision-making and strategic planning, while also immersing the player in a complex and emotional story.</p>
+                    <div class="project-buttons">
+                        <a href="path-to-detailed-page.html" class="moreButton">See More</a>
+                        <a href="https://github.com/your-repo" class="moreButton">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project2" class="projectContainer">
+                <div class="image">
+                    <img src="GameGridHome.png" alt="SportsResearch">
+                </div>
+                <div class="text">
+                    <h4>Sports Training in VR Research Project</h4>
+                    <p>Mentored Research Project</p>
+                    <div class="project-buttons">
+                        <a href="path-to-detailed-page.html" class="moreButton">See More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div id="contact">
+            <h5>Contact Me</h5><br>
+            <div class="icons" >
+                <a href="MatthewHolzerResume.pdf" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="ResumeIcon.png" alt="Resume Icon">
+                    </div>
+                </a>
+                <a href="https://github.com/Matthew0314" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="GitHub.png" alt="GitHub Icon">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="LinkedIN.png" alt="LinkedIn Icon">
+                    </div>
+                </a>
+                <a href="mailto:matthewh314@gmail.com">
+                    <div class="iconContainer">
+                        <img src="Email.png" alt="Email Icon">
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     
     <script src="script.js"></script>
