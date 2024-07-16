@@ -359,6 +359,7 @@ h6 {
     color: var(--textColor);
     text-align: center;
     margin: 0px 40px 0px 40px;
+    /* border-left: 5px solid #ddd; */
     
     
     
@@ -375,7 +376,7 @@ h6 {
     text-align: center;
     margin: 0 auto;
     padding: 0px;
-    border-right: 5px solid #ddd;
+    /* border-right: 5px solid #ddd; */
     
     /* padding-top: 10px; */
 }
@@ -394,12 +395,14 @@ h6 {
    
     margin: 0;
     font-size: 2.5em;
+    padding-top: 20px;
 }
 #projects .project-buttons{
     padding-top: 40px;
     gap: 30px;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 #projects .moreButton {
