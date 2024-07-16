@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where The Moon Meets The Sun</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism-vsc-dark-plus.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="prism.js"></script>
+   
+    
+</head>
+<body id="WTMMTSBody">
+
+    <div id="popup-menu" class="popup-menu">
+        <div class="links">
+            <a href="index.html#nameTitle" onclick="toggleMenu()">Home</a>
+            <a href="index.html#about" onclick="toggleMenu()">About</a>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+
+        <div class="icons" style="padding-bottom: 50px;">
+            <a href="MatthewHolzerResume.pdf" target="_blank">
+                <div class="iconContainer" >
+                    <img src="ResumeIcon.png" alt="Resume Icon">
+                </div>
+            </a>
+            <a href="https://github.com/Matthew0314" target="_blank">
+                <div class="iconContainer" >
+                    <img src="GitHub.png" alt="GitHub Icon">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                <div class="iconContainer" >
+                    <img src="LinkedIN.png" alt="LinkedIn Icon">
+                </div>
+            </a>
+            <a href="mailto:matthewh314@gmail.com">
+                <div class="iconContainer">
+                    <img src="Email.png" alt="Email Icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+    <div id="overlayPic" class="overlay" onclick="toggleMenu()" style="z-index: -1; display:block;"></div>
+    
+    <div id="homeVideo" class="video-container" style="z-index:-1000;">
+        <img src="GameGridHome.png" alt="GamePhoto">
+    </div>
+
+    <header class="head" id="header">
+        <a class="logo" href="index.html"><strong>Matthew Holzer</strong> Portfolio<span></span></a>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">Menu ☰</div>
+        </div>
+    </header>
+
+    <div id="nameTitle">
+        <h1>Where The Moon Meets The Sun</h1>
+        <p>Tactical Role-Playing Game made in Unity</p>
+        <div class="nameLinks">
+            <a href="https://github.com/Matthew0314/Where-The-Moon-Meets-The-Sun" target="_blank"><img src="GitHub.png" alt="GitHub Icon">GITHUB</a>
+        </div>
+    </div>
+
+
+    <div class="TextWrap">
+
+        <div id="ProjectOverview">
+            <h2>Overview</h2>
+            <p>Where The Moon Meets The Sun is a video game I began developing in December 2023 using Unity. Inspired by video games such as Fire Emblem and Final Fantasy Tactics, this game project features grid-based combat where players will strategically maneuver their units to defeat opposing enemy units. Each map presents different objectives, such as routing all enemies, defeating the boss unit, or safely moving all units to the escape point. Throughout my time developing this project I have implemented the following features:</p>
+            <ul>
+                <li>Designed algorithms that dictates where units can move and attack based on their stats.</li>
+                <li>Implemented a database that stores character and class statistics.</li>
+                <li>Integrated capabilities for units to execute attacks.</li>
+                <li>Developed a user interface allowing players to see the expected outcome of each action.</li>
+                <li>Designed unique enemy AI, allowing each opposing unit to determine the best action to take against the player.</li>
+                <li>Developed a tutorial level designed to teach the player the mechanics of the game.</li>
+            </ul>
+            <div id="ProjectVideo">
+                <!-- <video autoplay loop playsinline controls>
+                    <source src="WTMMTSVideo.mp4" type="video/mp4">
+                </video> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5bBWfCTJMRo?si=8fL4piSUnha94Cxp?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div id="ProjectStory">
+            <h3>Story</h3>
+            <p>It’s been 4356 years since their planet stood still, since humanity abandoned their birthplace to seek refuge among the stars. Those left behind were burdened with the sins of their forefathers, embodied in the whispers, creatures bent on extinguishing the final embers of life. Felix, haunted by the tragic loss of his younger sister, was left behind as his elder sibling Amanda embarked on a quest to become a firefly, brave souls on a mission to guide the remnants of their world to the promised land, where mankind awaits for them. Yet, like so many that came before her, her light eventually flickered and vanished. Now, as the planet teeters on the brink of its seventh mass extinction, Felix sets forth on a journey to where he believes his sister awaits, on the shore where the moon meets the sun.</p>
+        </div>
+
+        <div id="ProjectGameplay">
+            <h4>Gameplay</h4>
+            <p>Where the Moon Meets the Sun is a tactical role-playing game I’ve been developing in Unity since the fall of 2023. Inspired by video games like Fire Emblem and Final Fantasy Tactics, the game features grid-based combat where players will strategically maneuver their units to defeat opposing enemy units. Each map presents different objectives, such as routing all enemies, defeating the boss unit, or safely moving all units to the escape point. Players must balance completing these objectives with the challenge of preventing their units from falling, as when a unit dies they are gone for good. However, fallen units can be utilized to provide stat boosts and other benefits to surviving units in future maps. The game offers a compelling blend of tactical decision-making and strategic planning, while also immersing the player in a complex and emotional story.</p>
+
+          
+        </div>
+
+        <div id="ProjectCode">
+            <h6>Coding and Challenges</h6>
+
+                <button type="button" class="collapsible">
+                    Shortest Path Algorithm (A* Algorithm)
+                    <span class="icon">+</span>
+                </button>
+                <div class="content">
+                    <p>In my Unity-based tactical RPG, I implemented the A* algorithm for efficient pathfinding. This algorithm finds the shortest path from one tile to another by evaluating nodes based on cost and heuristic values. Starting with the open and closed lists, it continuously updates the path cost for neighboring nodes, adding them to the open list if they present a better route. The algorithm calculates distances using the Manhattan method and retraces the path from the destination to the start node. This algorithm has been useful for developing the enemies AI, as it allows enemies with tracking behavior to pursue player units from anywhere on the grid</p>
+
+                <pre><code class="language-csharp">
+        public List<PathTile> FindShortestPath(int startX, int startZ, int endX, int endZ) {
+            PathTile startTile = pathTiles[startX, startZ];
+            PathTile endTile = pathTiles[endX, endZ];
+
+            List<PathTile> openList = new List<PathTile>();
+            List<PathTile> closedList = new List<PathTile>();
+
+            openList.Add(startTile);
+
+            while (openList.Count > 0) {
+                PathTile currentTile = openList[0];
+
+                for (int i = 0; i < openList.Count; i++) {
+                    if (currentTile.fValue > openList[i].fValue) {
+                        currentTile = openList[i];
+                    }
+
+                    if (currentTile.fValue == openList[i].fValue && currentTile.hValue > openList[i].hValue) {
+                        currentTile = openList[i];
+                    }
+                }
+
+                openList.Remove(currentTile);
+                closedList.Add(currentTile);
+
+                if (currentTile == endTile) {
+                    return RetracePath(startTile, endTile);
+                }
+
+                List<PathTile> neighborTiles = new List<PathTile>();
+                for (int x = -1; x < 2; x++) {
+                    for (int z = -1; z < 2; z++) {
+                        if ((x == 0 && z == 0) || (x != 0 && z != 0)) {continue;}
+                        if (!gridTraverse.IsValid(currentTile.x + x, currentTile.z + z)) { continue; } //?
+                        
+                        neighborTiles.Add(pathTiles[currentTile.x + x, currentTile.z + z]);
+                    }
+                }
+
+                for (int i = 0; i < neighborTiles.Count; i++) {
+                    if (closedList.Contains(neighborTiles[i])) { continue; }
+                    if (!gridTraverse.GetGridTile(neighborTiles[i].x, neighborTiles[i].z).GetPassable()) { continue; }
+
+                    float moveCost = currentTile.gValue + CalculateDistance(currentTile , neighborTiles[i]);
+
+                    if (!openList.Contains(neighborTiles[i]) || moveCost < neighborTiles[i].gValue) {
+                        neighborTiles[i].gValue = moveCost;
+                        neighborTiles[i].hValue = CalculateDistance(neighborTiles[i], endTile);
+                        neighborTiles[i].parentTile = currentTile;
+
+                        if(!openList.Contains(neighborTiles[i])) {
+                            openList.Add(neighborTiles[i]);
+                        }
+                    }
+                }
+            }
+
+            return null;
+        }
+
+
+        private int CalculateDistance(PathTile currentTile, PathTile targetTile) {
+            int distX = Mathf.Abs(currentTile.x - targetTile.x);
+            int distZ = Mathf.Abs(currentTile.z - targetTile.z);
+
+            if (distX > distZ) { return 14 * distZ + 10 * (distX - distZ); }
+            return 14 * distX + 10 * (distZ - distX);
+        }
+
+        private List<PathTile> RetracePath(PathTile startTile, PathTile endTile) {
+            List<PathTile> path = new List<PathTile>();
+
+            PathTile currentTile = endTile;
+
+            while (currentTile != startTile) {
+                path.Add(currentTile);
+                currentTile = currentTile.parentTile;
+            }
+            path.Reverse();
+            return path;
+        }
+
+                </code></pre>
+                </div>
+
+                <button type="button" class="collapsible">
+                    Movement and Attack Area Algorithm
+                    <span class="icon">+</span>
+                </button>
+                <div class="content">
+
+                <pre><code class="language-csharp">
+        public void calculateMovement(int startX, int startZ, int charMovement, UnitManager unit){
+
+            //cellList is used to keep track to cells that need to be processed
+            List<GridTile> cellList = new List<GridTile>();
+            List<GridTile> processedList = new List<GridTile>();
+
+            bool [,] discard;
+
+            //Adds the starting cell to both cellList and movableCells
+            cellList.Add(gridTraverse.GetGridTile(startX, startZ));
+            processedList.Add(gridTraverse.GetGridTile(startX, startZ));
+
+            //creates arrays that store the distance number and which cells have been visited
+            moveDistances = new int[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            moveVisited = new bool[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            canAttack = new bool[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            canMove = new bool[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            Debug.Log(startX + " " + startZ);
+            canMove[startX, startZ] = true;
+
+            //Initilizes all distances with the max interger
+            for (int i = 0; i < gridTraverse.GetWidth(); i++)
+            {
+                for (int j = 0; j < gridTraverse.GetLength(); j++)
+                {
+                    moveDistances[i, j] = int.MaxValue;
+                }
+            }
+
+            moveDistances[startX, startZ] = 0;
+            canMove[startX, startZ] = true;
+
+            while (cellList.Count > 0)
+            {
+                GridTile currentCell = cellList[0];
+                cellList.RemoveAt(0);
+
+                int currX = currentCell.GetGridX();
+                int currZ = currentCell.GetGridZ();
+
+                if (moveVisited[currX, currZ]) { continue; }
+
+                moveVisited[currX, currZ] = true;
+                discard = CalculateAttack(currX, currZ, unit.primaryWeapon.Range, unit.primaryWeapon.Range1, unit.primaryWeapon.Range2, unit.primaryWeapon.Range3);
+
+                for (int x = -1; x < 2; x++)
+                {
+                    for (int z = -1; z < 2; z++)
+                    {
+                        if ((x == 0 && z == 0) || (x != 0 && z != 0)) { continue; }
+
+                        int nextX = currX + x;
+                        int nextZ = currZ + z;
+
+                        if (gridTraverse.IsValid(nextX, nextZ))
+                        {
+
+                            //If implementing flier class later on change this to check that case
+                            int currCost = gridTraverse.GetGridTile(nextX, nextZ).GetMovementCost();
+
+                            if (currCost == int.MaxValue || ((gridTraverse.GetGridTile(nextX, nextZ).UnitOnTile != null && gridTraverse.GetGridTile(nextX, nextZ).UnitOnTile.stats != null ) && gridTraverse.GetGridTile(nextX, nextZ).UnitOnTile.stats.UnitType != unit.stats.UnitType))
+                            {
+                                continue;
+                            }
+
+                            int newDistance = moveDistances[currX, currZ] + currCost;
+
+                            if (!moveVisited[nextX, nextZ] && newDistance <= charMovement)
+                            {
+                                canMove[nextX, nextZ] = true;
+                                moveDistances[nextX, nextZ] = newDistance;
+                                if (!processedList.Contains(gridTraverse.GetGridTile(nextX, nextZ)))
+                                {
+                                    cellList.Add(gridTraverse.GetGridTile(nextX, nextZ));
+                                }
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+
+
+        public bool[,] CalculateAttack(int startX, int startZ, int attackRange, bool canAttack1, bool canAttack2, bool canAttack3){
+            List<GridTile> cellList = new List<GridTile>();
+            List<GridTile> processedList = new List<GridTile>();
+
+            sX = startX;
+            sZ = startZ;
+
+            cellList.Add(gridTraverse.GetGridTile(startX, startZ));
+            processedList.Add(gridTraverse.GetGridTile(startX, startZ));
+
+            attackDistances = new int[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            attackVisited = new bool[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            canOnlyAttack = new bool[gridTraverse.GetWidth(), gridTraverse.GetLength()];
+            
+
+            for (int i = 0; i < gridTraverse.GetWidth(); i++)
+            {
+                for (int j = 0; j < gridTraverse.GetLength(); j++)
+                {
+                    attackDistances[i, j] = int.MaxValue;
+                }
+            }
+
+            attackDistances[startX, startZ] = 0;
+            canAttack[startX, startZ] = true;
+
+            while (cellList.Count > 0)
+            {
+                GridTile currentCell = cellList[0];
+                cellList.RemoveAt(0);
+
+                int currX = currentCell.GetGridX();
+                int currZ = currentCell.GetGridZ();
+
+                if (attackVisited[currX, currZ])
+                {
+                    continue;
+                }
+
+                attackVisited[currX, currZ] = true;
+
+                for (int x = -1; x < 2; x++)
+                {
+                    for (int z = -1; z < 2; z++)
+                    {
+                        if ((x == 0 && z == 0) || (x != 0 && z != 0))
+                        {
+                            continue;
+                        }
+
+                        int nextX = currX + x;
+                        int nextZ = currZ + z;
+
+                        if (gridTraverse.IsValid(nextX, nextZ))
+                        {
+
+                            //If implementing flier class later on change this to check that case
+                            int currCost = gridTraverse.GetGridTile(nextX, nextZ).GetAttackCost();
+
+                            if (currCost == int.MaxValue)
+                            {
+                                continue;
+                            }
+
+                            int newDistance = attackDistances[currX, currZ] + currCost;
+
+                            if (!attackVisited[nextX, nextZ] && newDistance <= attackRange)
+                            {   
+                                if (attackRange > 3 && newDistance > 3) {
+                                    canAttack[nextX, nextZ] = true;
+                                    canOnlyAttack[nextX, nextZ] = true;
+                                }
+
+                                if (canAttack1 && newDistance == 1) {
+                                    canAttack[nextX, nextZ] = true;
+                                    canOnlyAttack[nextX, nextZ] = true;
+
+                                }
+                                if (canAttack2 && newDistance == 2) {
+                                    canAttack[nextX, nextZ] = true;
+                                    canOnlyAttack[nextX, nextZ] = true;
+                                }
+                                if (canAttack3 && newDistance == 3) {
+                                    canAttack[nextX, nextZ] = true;
+                                    canOnlyAttack[nextX, nextZ] = true;
+                                }
+                                
+                                attackDistances[nextX, nextZ] = newDistance;
+                                if (!processedList.Contains(gridTraverse.GetGridTile(nextX, nextZ)))
+                                {
+                                    cellList.Add(gridTraverse.GetGridTile(nextX, nextZ));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return canOnlyAttack;
+        }             
+                </code></pre>
+                </div>
+        </div>
+        
+
+
+        <div id="contact">
+            <h5>Contact Me</h5><br>
+            <div class="icons" >
+                <a href="MatthewHolzerResume.pdf" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="ResumeIcon.png" alt="Resume Icon">
+                    </div>
+                </a>
+                <a href="https://github.com/Matthew0314" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="GitHub.png" alt="GitHub Icon">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="LinkedIN.png" alt="LinkedIn Icon">
+                    </div>
+                </a>
+                <a href="mailto:matthewh314@gmail.com">
+                    <div class="iconContainer">
+                        <img src="Email.png" alt="Email Icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

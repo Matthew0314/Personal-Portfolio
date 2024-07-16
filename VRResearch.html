@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Research Project</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism-vsc-dark-plus.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="prism.js"></script>
+   
+    
+</head>
+<body id="WTMMTSBody">
+
+    <div id="popup-menu" class="popup-menu">
+        <div class="links">
+            <a href="index.html#nameTitle" onclick="toggleMenu()">Home</a>
+            <a href="index.html#about" onclick="toggleMenu()">About</a>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+
+        <div class="icons" style="padding-bottom: 50px;">
+            <a href="MatthewHolzerResume.pdf" target="_blank">
+                <div class="iconContainer" >
+                    <img src="ResumeIcon.png" alt="Resume Icon">
+                </div>
+            </a>
+            <a href="https://github.com/Matthew0314" target="_blank">
+                <div class="iconContainer" >
+                    <img src="GitHub.png" alt="GitHub Icon">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                <div class="iconContainer" >
+                    <img src="LinkedIN.png" alt="LinkedIn Icon">
+                </div>
+            </a>
+            <a href="mailto:matthewh314@gmail.com">
+                <div class="iconContainer">
+                    <img src="Email.png" alt="Email Icon">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+    <div id="overlayPic" class="overlay" onclick="toggleMenu()" style="z-index: -1; display:block;"></div>
+    
+    <div id="homeVideo" class="video-container" style="z-index:-1000;">
+        <img src="VRResearch.png" alt="GamePhoto">
+    </div>
+
+    <header class="head" id="header">
+        <a class="logo" href="index.html"><strong>Matthew Holzer</strong> Portfolio<span></span></a>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">Menu ☰</div>
+        </div>
+    </header>
+
+    <div id="nameTitle">
+        <h1>VR Research Project</h1>
+        <p>Researching how VR can be used for sports training purposes</p>
+        <div class="nameLinks">
+            <a href="https://github.com/Matthew0314/Where-The-Moon-Meets-The-Sun" target="_blank"><img src="GitHub.png" alt="GitHub Icon">GITHUB</a>
+        </div>
+    </div>
+
+
+    <div class="TextWrap">
+
+        <div id="ProjectOverview">
+            <h2>Overview</h2>
+            <p>For this research project, I am exploring the application of camera-based motion capture and Virtual Reality in sports training. Numerous studies have demonstrated that training with someone who shares the same height, gender, and skin color can enhance performance. Our hypothesis is that a virtual reality simulation, where users can see their motions replicated by a model with similar physical attributes, can further improve performance and accessibility in sports training.</p>
+            <p>To achieve this, we are utilizing Rokoko Studios to capture motion data, which will then be applied to rigs obtained from Mixamo. The development of the simulation will be carried out using Unity and Virtual Reality technology, enabling users to visualize their movements and assess their performance. This innovative approach aims to create a more personalized and effective training experience.</p>
+
+
+        </div>
+
+
+
+
+        <div id="contact" style="background-color: rgb(54, 54, 88); padding-top: 40px;">
+            <h5>Contact Me</h5><br>
+            <div class="icons" >
+                <a href="MatthewHolzerResume.pdf" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="ResumeIcon.png" alt="Resume Icon">
+                    </div>
+                </a>
+                <a href="https://github.com/Matthew0314" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="GitHub.png" alt="GitHub Icon">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/matthewholzer314/" target="_blank">
+                    <div class="iconContainer" >
+                        <img src="LinkedIN.png" alt="LinkedIn Icon">
+                    </div>
+                </a>
+                <a href="mailto:matthewh314@gmail.com">
+                    <div class="iconContainer">
+                        <img src="Email.png" alt="Email Icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
