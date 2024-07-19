@@ -17,14 +17,7 @@ body {
   
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    /* overflow: auto; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 h1,
@@ -34,7 +27,10 @@ h4,
 h5,
 h6 {
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
+
+
 
 
 #homePage h1,
@@ -48,7 +44,7 @@ h6 {
 
 #header {
     display: flex;
-    overflow: visible; 
+    /* overflow: visible;  */
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -286,6 +282,16 @@ h6 {
 }
 
 @media screen and (max-width: 760px) {
+
+    /* html, body {
+        width: 100%;
+        overflow-x: hidden;
+        /* overflow: auto; 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+
     h1 {
         font-size: 15vw;
     }
