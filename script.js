@@ -50,3 +50,88 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const projectContainers = document.querySelectorAll('.projectContainer');
+
+//     function adjustGrid() {
+//         projectContainers.forEach(container => {
+//             const image = container.querySelector('.image img');
+
+//             if (window.innerWidth <= 760) {
+//                 const imageWidth = image.clientWidth;
+//                 const imageHeight = image.clientHeight;
+
+//                 container.style.gridTemplateRows = `${imageHeight}px auto`;
+//                 container.style.gridTemplateColumns = `1fr`;
+//             } else {
+//                 container.style.gridTemplateRows = '';
+//                 container.style.gridTemplateColumns = '1fr 1fr';
+//             }
+//         });
+//     }
+
+//     // Adjust grid when each image loads
+//     projectContainers.forEach(container => {
+//         const image = container.querySelector('.image img');
+//         image.onload = adjustGrid;
+//     });
+
+//     // Adjust grid on window resize
+//     window.addEventListener('resize', adjustGrid);
+
+//     // Initial check to adjust the grid when the DOM is fully loaded
+//     adjustGrid();
+// });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projectContainers = document.querySelectorAll('.projectContainer');
+    const aboutContainer = document.querySelector('.aboutContainer');
+
+    function adjustGrid() {
+        if (window.innerWidth > 760) {
+            // Reset styles for screens larger than 760px
+            projectContainers.forEach(container => {
+                container.style.gridTemplateRows = '';
+                container.style.gridTemplateColumns = '';
+            });
+            aboutContainer.style.gridTemplateRows = '';
+            aboutContainer.style.gridTemplateColumns = '';
+            return;
+        }
+
+        // Adjust project containers
+        projectContainers.forEach(container => {
+            const image = container.querySelector('.image img');
+            const imageWidth = image.clientWidth;
+            const imageHeight = image.clientHeight;
+
+            container.style.gridTemplateRows = `${imageHeight}px auto`;
+            container.style.gridTemplateColumns = `1fr`;
+        });
+
+        // Adjust about container
+        const aboutImage = aboutContainer.querySelector('.image img');
+        const aboutImageWidth = aboutImage.clientWidth;
+        const aboutImageHeight = aboutImage.clientHeight;
+
+        aboutContainer.style.gridTemplateRows = `${aboutImageHeight}px auto`;
+        aboutContainer.style.gridTemplateColumns = `1fr`;
+    }
+
+    // Adjust grid when each image loads
+    projectContainers.forEach(container => {
+        const image = container.querySelector('.image img');
+        image.onload = adjustGrid;
+    });
+
+    const aboutImage = aboutContainer.querySelector('.image img');
+    aboutImage.onload = adjustGrid;
+
+    // Adjust grid on window resize
+    window.addEventListener('resize', adjustGrid);
+
+    // Initial check to adjust the grid when the DOM is fully loaded
+    adjustGrid();
+});
