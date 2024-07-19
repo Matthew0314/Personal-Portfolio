@@ -17,6 +17,14 @@ body {
   
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 h1,
 h2,
@@ -218,7 +226,7 @@ h6 {
 }
 
 #nameTitle h1{
-    font-size: 100px;
+    /* font-size: 100px; */
     border-bottom: 4px solid; 
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
     /* padding-bottom: 20px;  */
@@ -263,6 +271,18 @@ h6 {
     transform: translate(0, 25%);
     margin-right: 7px; 
 }
+@media screen and (min-width: 760px) {
+    #nameTitle h1 {
+        font-size: 100px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 2px;
+    }
+}
 
 .TextWrap {
     background-color: var(--backColor1);
@@ -281,7 +301,7 @@ h6 {
     /* max-width: 800px;  */
     margin: 0 auto;
     padding: 20px; 
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 #about .aboutContainer {
@@ -318,7 +338,7 @@ h6 {
     text-decoration: none;
     /* border-bottom: 4px solid ;  */
     /* border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1; */
-    margin: 0px 50px 0px 50px;
+    /* margin: 0px 50px 0px 50px; */
 }
 
 #about p{
@@ -540,7 +560,7 @@ h6 {
 @media screen and (min-width: 760px) {
 
    #contact h5 {
-    
+
    }
 }
 
