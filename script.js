@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Reset styles for screens larger than 760px
             projectContainers.forEach(container => {
                 container.style.gridTemplateRows = '';
-                container.style.gridTemplateColumns = '';
+                container.style.gridTemplateColumns = '1fr 1fr';
             });
             aboutContainer.style.gridTemplateRows = '';
             aboutContainer.style.gridTemplateColumns = '';

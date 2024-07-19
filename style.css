@@ -230,7 +230,8 @@ h6 {
     border-bottom: 4px solid; 
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
     /* padding-bottom: 20px;  */
-    padding: 0px 7% 20px 7%;
+    /* padding: 0px 7% 20px 7%; */
+    /* margin: 0 10px; */
     display: inline-block; 
     margin-bottom: 50px;
     -webkit-text-stroke: 3px black;
@@ -241,7 +242,7 @@ h6 {
     padding-top: 0px;
     padding-bottom: 30px;
     margin-top: 0px;
-    font-size: 50px;
+    /* font-size: 50px; */
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 2px black;
@@ -271,16 +272,28 @@ h6 {
     transform: translate(0, 25%);
     margin-right: 7px; 
 }
+
 @media screen and (min-width: 760px) {
-    #nameTitle h1 {
+    h1 {
         font-size: 100px;
+    }
+
+    #nameTitle p {
+        font-size: 50px;
     }
 
 }
 
 @media screen and (max-width: 760px) {
     h1 {
-        font-size: 2px;
+        font-size: 13vw;
+    }
+    #nameTitle p {
+        font-size: 7vw;
+    }
+
+    #nameTitle .nameLinks {
+        display: none;
     }
 }
 
@@ -332,7 +345,7 @@ h6 {
     font-size: 75px;
     padding-top: 50px;
     margin: 0px;
-    padding: 50px 0px 0px 50px;
+    padding: 50px 0px 0px 0px;
     text-align: center;
     color: var(--headingColor);
     text-decoration: none;
@@ -348,7 +361,7 @@ h6 {
 }
 
 @media screen and (min-width: 760px) {
-    
+
 
     #about .aboutContainer {
         
@@ -400,7 +413,7 @@ h6 {
 #projects {
     background-color: var(--backColor2);
     margin: 0 auto;
-    padding-top: 50px;
+    
     padding-bottom: 50px;
 }
 
@@ -408,7 +421,9 @@ h6 {
     text-align: center;
     font-size: 75px;
     color: white;
-    margin: 50px 33% 100px 33%;
+    /* margin: 30px 10px; */
+   
+    
 }
 
 #projects .projectContainer {
@@ -480,6 +495,14 @@ h6 {
 
 @media screen and (min-width: 760px) {
 
+    #projects {
+        padding-top: 50px;
+    }
+
+    #projects h3 {
+        margin: 50px 33% 100px 33%;
+    }
+
     #projects .projectContainer {
         grid-template-columns: auto 1fr;
         gap: 10px;
@@ -500,9 +523,13 @@ h6 {
 }
 
 @media screen and (max-width: 760px) {
-    h3{
-        text-align: center;
-        margin:0px;
+
+    #projects {
+        padding-top: 20px;
+    }
+
+    #projects h3 {
+        margin: 100px 10px;
     }
     #projects .projectContainer {
         grid-template-rows: 1fr 1fr;
@@ -587,7 +614,7 @@ h6 {
 }
 
 h1{
-    font-size: 100px;
+    /* font-size: 100px; */
     border-bottom: 4px solid; 
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
     color: white;
@@ -646,12 +673,7 @@ h1{
     color: var(--textColor);
 }
 
-#ProjectOverview,
-#ProjectStory,
-#ProjectGameplay,
-#ProjectCode{
-    padding: 100px 17% 100px 17%;
-}
+
 
 #ProjectOverview p,
 #ProjectOverview ul,
@@ -714,3 +736,24 @@ pre {
 
 
 }
+
+@media screen and (min-width: 760px) {
+    #ProjectOverview,
+    #ProjectStory,
+    #ProjectGameplay,
+    #ProjectCode{
+        padding: 100px 17% 100px 17%;
+    }
+
+ }
+ 
+ @media screen and (max-width: 760px) {
+    #ProjectOverview,
+    #ProjectStory,
+    #ProjectGameplay,
+    #ProjectCode{
+        padding: 100px 5% 100px 5%;
+    }
+ }
+
+
