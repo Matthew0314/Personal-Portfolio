@@ -286,10 +286,10 @@ h6 {
 
 @media screen and (max-width: 760px) {
     h1 {
-        font-size: 13vw;
+        font-size: 15vw;
     }
     #nameTitle p {
-        font-size: 7vw;
+        font-size: 9vw;
     }
 
     #nameTitle .nameLinks {
