@@ -47,6 +47,48 @@ function toggleMenu() {
     }
 }
 
+function toggleWTMMTSMenu(){
+    var menu = document.getElementById('popup-menu');
+    var overlay = document.getElementById('overlay');
+
+    var nameTitle = document.getElementById('nameTitle');
+    var contact = document.getElementById('contact');
+
+
+    var projectOverview = document.getElementById('ProjectOverview');
+    var projectStory = document.getElementById('ProjectStory');
+    var projectGameplay = document.getElementById('ProjectGameplay');
+    var projectCode = document.getElementById('ProjectCode');
+
+    
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+        overlay.style.display = 'block';
+
+        nameTitle.classList.add('blur');
+        contact.classList.add('blur');
+
+
+        projectOverview.classList.add('blur');
+        projectStory.classList.add('blur');
+        projectGameplay.classList.add('blur');
+        projectCode.classList.add('blur');
+
+    } else {
+        menu.style.display = 'none';
+        overlay.style.display = 'none';
+ 
+        nameTitle.classList.remove('blur');
+        contact.classList.remove('blur');
+
+        projectOverview.classList.remove('blur');
+        projectStory.classList.remove('blur');
+        projectGameplay.classList.remove('blur');
+        projectCode.classList.remove('blur');
+
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var coll = document.getElementsByClassName("collapsible");
