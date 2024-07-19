@@ -356,7 +356,7 @@ h6 {
 
 #about p{
     font-size: 30px;
-    padding: 50px 0px 0px 50px;
+    /* padding: 50px 0px 0px 50px; */
     color: var(--textColor);
 }
 
@@ -375,6 +375,9 @@ h6 {
     #about .image{
         
         grid-column: 2 / 3;
+    }
+    #about p{
+        padding: 50px 0px 0px 50px; 
     }
     #about .h2Outside{
         display: none;
@@ -405,6 +408,11 @@ h6 {
     
     #about .image{
         grid-row: 1 / 2;
+    }
+
+    #about p{
+        padding: 50px 5% 0px 5%; 
+        text-align:center;
     }
 
 }
