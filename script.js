@@ -7,11 +7,11 @@ function toggleMenu() {
     var nameTitle = document.getElementById('nameTitle');
     var contact = document.getElementById('contact');
     var homeVideo = document.getElementById('homeVideo');
-    var WTMMTSBody = document.getElementById('WTMMTSBody');
-    var projectOverview = document.getElementById('ProjectOverview');
-    var projectStory = document.getElementById('ProjectStory');
-    var projectGameplay = document.getElementById('ProjectGameplay');
-    var projectCode = document.getElementById('ProjectCode');
+    // var WTMMTSBody = document.getElementById('WTMMTSBody');
+    // var projectOverview = document.getElementById('ProjectOverview');
+    // var projectStory = document.getElementById('ProjectStory');
+    // var projectGameplay = document.getElementById('ProjectGameplay');
+    // var projectCode = document.getElementById('ProjectCode');
 
     
     if (menu.style.display === 'none' || menu.style.display === '') {
@@ -24,10 +24,10 @@ function toggleMenu() {
         contact.classList.add('blur');
         homeVideo.classList.add('blur');
         WTMMTSBody.classList.add('blur');
-        projectOverview.classList.add('blur');
-        projectStory.classList.add('blur');
-        projectGameplay.classList.add('blur');
-        projectCode.classList.add('blur');
+        // projectOverview.classList.add('blur');
+        // projectStory.classList.add('blur');
+        // projectGameplay.classList.add('blur');
+        // projectCode.classList.add('blur');
 
     } else {
         menu.style.display = 'none';
@@ -39,10 +39,10 @@ function toggleMenu() {
         contact.classList.remove('blur');
         homeVideo.classList.remove('blur');
         WTMMTSBody.classList.remove('blur');
-        projectOverview.classList.remove('blur');
-        projectStory.classList.remove('blur');
-        projectGameplay.classList.remove('blur');
-        projectCode.classList.remove('blur');
+        // projectOverview.classList.remove('blur');
+        // projectStory.classList.remove('blur');
+        // projectGameplay.classList.remove('blur');
+        // projectCode.classList.remove('blur');
 
     }
 }
