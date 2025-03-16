@@ -1,6 +1,8 @@
 :root {
     --backColor1: rgb(73, 72, 117);
     --backColor2: rgb(54, 54, 88);
+    --projectCards1: rgb(40, 40, 60);
+    --projectCards2: rgb(91, 89, 140);
     --overlayColor: rgba(33, 33, 61, 0.9);
     --overlayColor2: rgba(54, 54, 88, .7);
     --headingColor: white;
@@ -445,7 +447,8 @@ h6 {
 }
 
 #projects .projectContainer {
-    background: var(--backColor1);
+    /* background: var(--backColor1); */
+    background: var(--projectCards2);
     display: grid;
     align-items: center;
     margin-bottom: 20px;
@@ -824,13 +827,13 @@ pre {
 
 #CodingProjects .project-card {
     /* background-color: var(--primary-card); */
-    background-color: var(--backColor2);
+    background-color: var(--projectCards1);
     border-radius: 10px;
     padding: 20px;
     position: relative;
     transition: transform 0.2s;
     flex-direction: column;
-    height: 500px;
+    height: 450px;
     /* height: 80%; */
     overflow: hidden;
     width: 80%; /* Allow the card to take full width of grid column */
@@ -920,7 +923,8 @@ pre {
 }
 
 #CodingProjects .tech-tag {
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color: rgba(230, 230, 250, 0.8);
     color: rgba(0, 0, 0, 0.8);
     padding: 4px 10px;
     border-radius: 15px;
@@ -944,8 +948,8 @@ pre {
 
 /* Icons */
 #CodingProjects .icon {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
