@@ -105,6 +105,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+function toggleExperience(card) {
+            const timelineItem = card.parentElement;
+            const dropdown = timelineItem.querySelector('.experience-dropdown');
+            const arrow = card.querySelector('.experience-arrow');
+            const isExpanded = timelineItem.getAttribute('data-expanded') === 'true';
+            
+            if (isExpanded) {
+                dropdown.style.maxHeight = '0';
+                dropdown.style.padding = '0 30px';
+                arrow.style.transform = 'rotate(0deg)';
+                timelineItem.setAttribute('data-expanded', 'false');
+            } else {
+                dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+                dropdown.style.padding = '20px 30px';
+                arrow.style.transform = 'rotate(180deg)';
+                timelineItem.setAttribute('data-expanded', 'true');
+            }
+        }
+
 // document.addEventListener('DOMContentLoaded', () => {
 //     const projectContainers = document.querySelectorAll('.projectContainer');
 
