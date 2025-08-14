@@ -997,7 +997,7 @@ pre {
     /* padding: 0 20px; */
 }
 
-.experience-title {
+#experience .experience-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -1019,12 +1019,12 @@ pre {
     border-radius: 2px;
 } */
 
-.experience-timeline {
+ #experience .experience-timeline {
     position: relative;
     padding: 0 20px;
 }
 
-.experience-timeline::before {
+#experience .experience-timeline::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -1037,24 +1037,24 @@ pre {
     box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
 }
 
-.experience-timeline-item {
+#experience .experience-timeline-item {
     position: relative;
     margin-bottom: 30px;
     width: 60%;
     transition: all 0.3s ease;
 }
 
-.experience-timeline-item:nth-child(odd) {
+#experience .experience-timeline-item:nth-child(odd) {
     left: -15%;
     padding-right: 50px;
 }
 
-.experience-timeline-item:nth-child(even) {
+#experience .experience-timeline-item:nth-child(even) {
     left: 50%;
     padding-left: 50px;
 }
 
-.experience-timeline-item::before {
+#experience .experience-timeline-item::before {
     content: '';
     position: absolute;
     top: 30px;
@@ -1067,15 +1067,15 @@ pre {
     z-index: 2;
 }
 
-.experience-timeline-item:nth-child(odd)::before {
+#experience .experience-timeline-item:nth-child(odd)::before {
     right: -10px;
 }
 
-.experience-timeline-item:nth-child(even)::before {
+#experience .experience-timeline-item:nth-child(even)::before {
     left: -12px;
 }
 
-.experience-card {
+#experience .experience-card {
     /* background: rgba(255, 255, 255, 0.95); */
     background: rgba(255, 247, 239, 0.95);
     /* background: rgba(20, 25, 45, 0.8); */
@@ -1092,12 +1092,12 @@ pre {
     position: relative;
 }
 
-.experience-card:hover {
+#experience .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.experience-logo {
+#experience .experience-logo {
     width: 50px;
     height: 50px;
     border-radius: 10px;
@@ -1109,13 +1109,13 @@ pre {
     justify-content: center;
 }
 
-.experience-logo img {
+#experience .experience-logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.experience-header {
+#experience .experience-header {
     flex: 1;
     display: flex;
     justify-content: space-between;
@@ -1123,11 +1123,11 @@ pre {
     gap: 20px;
 }
 
-.experience-title-group {
+#experience .experience-title-group {
     flex: 1;
 }
 
-.experience-job-title {
+#experience .experience-job-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
@@ -1136,14 +1136,14 @@ pre {
     line-height: 1.2;
 }
 
-.experience-company {
+#experience .experience-company {
     font-size: 1rem;
     color: #4A90E2;
     font-weight: 500;
     margin: 0;
 }
 
-.experience-date {
+#experience .experience-date {
     font-size: 0.9rem;
     color: #7f8c8d;
     font-weight: 500;
@@ -1154,19 +1154,19 @@ pre {
     flex-shrink: 0;
 }
 
-.experience-expand-icon {
+#experience .experience-expand-icon {
     margin-left: 10px;
     flex-shrink: 0;
 }
 
-.experience-arrow {
+#experience .experience-arrow {
     font-size: 1.2rem;
     color: #4A90E2;
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
-.experience-dropdown {
+#experience .experience-dropdown {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -1178,34 +1178,34 @@ pre {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.experience-description {
+#experience .experience-description {
     padding: 20px 0;
 }
 
-.experience-description ul {
+#experience .experience-description ul {
     margin: 0 0 20px 0;
     padding-left: 20px;
     color: #2c3e50;
     line-height: 1.6;
 }
 
-.experience-description li {
+#experience .experience-description li {
     margin-bottom: 10px;
     position: relative;
 }
 
-.experience-description li::marker {
+#experience .experience-description li::marker {
     color: #4A90E2;
 }
 
-.experience-skills {
+#experience .experience-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 15px;
 }
 
-.experience-skill-tag {
+#experience .experience-skill-tag {
     background: #4A90E2;
     color: white;
     padding: 6px 12px;
@@ -1215,7 +1215,7 @@ pre {
     transition: all 0.3s ease;
 }
 
-.experience-skill-tag:hover {
+#experience .experience-skill-tag:hover {
     background: #357ABD;
     transform: translateY(-1px);
 }
@@ -1226,40 +1226,40 @@ pre {
         padding: 0 15px;
     }
 
-    .experience-title {
+    #experience .experience-title {
         font-size: 2rem;
         margin-bottom: 30px;
     }
 
-    .experience-timeline {
+    #experience .experience-timeline {
         padding: 0 10px;
     }
 
-    .experience-timeline::before {
+    #experience .experience-timeline::before {
         left: 30px;
         transform: none;
     }
 
-    .experience-timeline-item {
+    #experience .experience-timeline-item {
         width: calc(100% - 60px);
         left: 67.5px !important;
         padding: 0 !important;
         margin-bottom: 25px;
     }
 
-    .experience-timeline-item::before {
+    #experience .experience-timeline-item::before {
         left: -58px !important;
         top: 25px;
     }
 
-    .experience-card {
+    #experience .experience-card {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
         padding: 20px;
     }
 
-    .experience-header {
+    #experience .experience-header {
         width: 100%;
         flex-direction: row;
         align-items: flex-start;
@@ -1267,53 +1267,53 @@ pre {
         gap: 15px;
     }
 
-    .experience-job-title {
+    #experience .experience-job-title {
         font-size: 1.1rem;
     }
 
-    .experience-company {
+    #experience .experience-company {
         font-size: 0.9rem;
     }
 
-    .experience-date {
+    #experience .experience-date {
         align-self: flex-start;
         font-size: 0.8rem;
         padding: 5px 12px;
         flex-shrink: 0;
     }
 
-    .experience-dropdown {
+    #experience .experience-dropdown {
         padding: 0 20px;
     }
 
-    .experience-description {
+    #experience .experience-description {
         padding: 15px 0;
     }
 
-    .experience-skills {
+    #experience .experience-skills {
         gap: 6px;
     }
 
-    .experience-skill-tag {
+    #experience .experience-skill-tag {
         font-size: 0.75rem;
         padding: 4px 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .experience-timeline-item {
+    #experience .experience-timeline-item {
         width: calc(100% - 40px);
         left: 40px !important;
     }
 
-    .experience-timeline-item::before {
+    #experience .experience-timeline-item::before {
         left: -38px !important;
         width: 12px;
         height: 12px;
         border: 3px solid #1a1a2e;
     }
 
-    .experience-timeline::before {
+    #experience .experience-timeline::before {
         left: 20px;
         width: 3px;
     }
