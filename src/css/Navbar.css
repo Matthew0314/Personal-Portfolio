@@ -1,0 +1,125 @@
+#header {
+    display: flex;
+    /* overflow: visible;  */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--backColor1);
+    color: white;
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+    
+    
+}
+
+#header .logo {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#header a strong{
+    background:white;
+    color: var(--backColor2);
+    padding: 5px;
+}
+
+#header .menu {
+    font-size: 24px;
+
+    cursor: pointer;
+    user-select: none; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color:white;
+}
+
+head {
+    background-color: var(--backColor1);
+}
+
+
+
+
+/* popup menu when menu at the header is clicked */
+#popup-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1001;
+    
+}
+
+#popup-menu .links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    padding: 20px 150px 20px 150px;
+}
+
+#popup-menu .links a:hover {
+    background-color: rgba(241, 241, 241, 0.2);
+}
+
+#popup-menu .iconContainer img{
+    padding-top: 30px;
+    width: clamp(60px, 10%, 10%);
+}
+  
+#popup-menu  .icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* padding-top: 30px; */
+    margin: 0px;
+    
+}
+  
+#popup-menu  .iconContainer:hover img{
+    animation: scaleUp 0.3s ease forwards;
+}
+  
+@keyframes scaleUp {
+    from {
+        transform: scale(1); /* Initial size */
+    }
+    to {
+        transform: scale(1.3); /* Scale up to 1.1 times */
+    }
+}
+
+/* blurs out the background */
+.overlay {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlayColor);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    
+    /* filter: blur(5px); */
+}
+
+#overlay{
+    background-color: var(--overlayColor);
+    z-index: 1000; 
+}
+
+#overlayPic{
+    background-color: var(--overlayColor2);
+    z-index: -1; 
+    
+}
