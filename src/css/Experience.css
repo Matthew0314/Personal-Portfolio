@@ -17,7 +17,6 @@ h1 {
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
     text-align: center;
-    color: white;
     font-size: clamp(3rem, 3.75vw, 7rem);
 
 }
@@ -150,7 +149,7 @@ h3 {
 
 .experience-header {
     flex: 1;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -351,8 +350,22 @@ h3 {
         margin-right: 10%;
         margin-left: 5%;
     }
-}
 
+    .experience-title-group {
+        padding-bottom: 15px;
+    }
+}
+@media (min-width:1350px) {
+    .experience-header {
+        display: flex;
+
+    }
+
+    
+
+    
+    
+}
 @media (max-width: 480px) {
     .experience-timeline-item {
         width: calc(100% - 40px);

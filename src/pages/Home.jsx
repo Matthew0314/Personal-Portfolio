@@ -53,7 +53,7 @@ function Home() {
                 external: true
             },
             {
-                href: "https://github.com/matthewholzer",
+                href: "https://github.com/Matthew0314",
                 label: "GitHub",
                 icon: githubIcon,
                 external: true

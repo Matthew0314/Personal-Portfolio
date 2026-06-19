@@ -147,7 +147,7 @@ const FCardData = [
         description: "Collaborated with a team of four to create a virtual reality CPR training simulator using Unity and the Oculus Quest 2. The simulator provided an immersive environment for users to practice CPR techniques, featuring realistic patient models, interactive feedback on compression depth and rate, and various training scenarios. We implemented physics-based interactions for chest compression while optimizing performance for a smooth VR experience.",
         links: [
             { href: "https://youtube.com/watch?v=hu8W6fg3syw&feature=youtu.be", label: "Video Demo", external: true},
-            { href: "https://github.com/Matthew0314/Virtual-Reality-CPR-Simulator", label: "GitHub", external: true}
+            { href: "https://github.com/pawarv1/CPR-Game", label: "GitHub", external: true}
         ],
         image: vrImage
     }
