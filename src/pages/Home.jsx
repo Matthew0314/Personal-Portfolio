@@ -63,12 +63,12 @@ function Home() {
                 label: "LinkedIn",
                 icon: linkedinIcon,
                 external: true
-            },
-            {
-                href: "mailto:matthewh314@gmail.com",
-                label: "Email",
-                icon: emailIcon
             }
+            // {
+            //     href: "mailto:matthewh314@gmail.com",
+            //     label: "Email",
+            //     icon: emailIcon
+            // }
             
             ]}
         />
@@ -76,7 +76,7 @@ function Home() {
         <About />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact backgroundColor="var(--backColor2)" />
 
         </main>
         </>

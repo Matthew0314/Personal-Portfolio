@@ -71,11 +71,11 @@ function PopupMenu({ toggleMenu, menuOpen, menuItems = [] }) {
             </div>
           </a>
 
-          <a href="mailto:matthewh314@gmail.com">
+          {/* <a href="mailto:matthewh314@gmail.com">
             <div className="iconContainer">
               <img src={emailIcon} alt="Email Icon" />
             </div>
-          </a>
+          </a> */}
         </div>
 
       </div>

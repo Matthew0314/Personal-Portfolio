@@ -5,9 +5,9 @@ import githubIcon from "../assets/GitHub.png";
 import linkedinIcon from "../assets/LinkedIN.png";
 import emailIcon from "../assets/Email.png";
 
-function Contact() {
+function Contact({backgroundColor}) {
     return (
-        <div id="contact">
+        <div id="contact" style={{ backgroundColor }}>
             <h1>Contact Me</h1>
             <div className="icons" >
                 <a href="MatthewHolzerResume.pdf" target="_blank">
@@ -25,11 +25,11 @@ function Contact() {
                         <img src={linkedinIcon} alt="LinkedIn Icon"></img>
                     </div>
                 </a>
-                <a href="mailto:matthewh314@gmail.com">
+                {/* <a href="mailto:matthewh314@gmail.com">
                     <div className="iconContainer">
                         <img src={emailIcon} alt="Email Icon"></img>
                     </div>
-                </a>
+                </a> */}
             </div>
         </div>
     )

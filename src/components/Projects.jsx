@@ -134,7 +134,7 @@ const FCardData = [
 
     {
         title: "RatKyll and Hyde",
-        description: "Worked with a five-person team that developed a local couch co-op multiplayer game in Unity set in a lively restaurant and kitchen environment. The game featured a single mode in which players competed to get as much food into a shared pot as possible while sabotaging each other, blending competitive and cooperative elements to create strategic and interactive gameplay. We implemented dynamic environmental interactions—such as hazards, scripted events, and physics-based challenges—while optimizing for a smooth, balanced shared-screen experience.",
+        description: "Worked with a five-person team that developed a local couch co-op multiplayer game in Unity set in a lively restaurant and kitchen environment. The game features two rats competing to steal the most amount of food. Players can use a variety of abilities to outsmart their opponents, such as throwing objects, creating distractions, and setting traps.",
         links: [
             { href: "https://youtube.com/watch?v=hu8W6fg3syw&feature=youtu.be", label: "Video Demo", external: true},
             { href: "https://github.com/Matthew0314/RatKyll-and-Hyde", label: "GitHub", external: true}
@@ -157,6 +157,16 @@ const FCardData = [
 
 
 const CCardData = [
+    {
+        title: "Leave The World Behind - Strategy Hub",
+        date: "June 2026",
+        description: [
+            "Developed a full-stack companion platform using React and Spring Boot featuring discussion forums, chapter guides, and character wikis for an original tactical RPG project",
+            "Integrated Google's Gemini API through Spring AI to analyze player discussion threads and generate AI-powered tactical summaries",
+            "Engineered a RESTful backend using Java Spring Boot and PostgreSQL to efficiently map and query relationships between forum threads and nested comment chains"
+        ],
+        tech: ["Spring Boot", "React.js", "Java", "PostgreSQL", "Google Gemini API", "Full-Stack Development"]
+    },
   {
     title: "LeGalBTQ",
     date: "February 2025",
@@ -216,17 +226,17 @@ const CCardData = [
         ],
         tech: ["C", "Linux", "Socket Programming"]
     },
-    {
-        title: "Hackathon Scheduler",
-        date: "February 2025",
-        description: [
-            "Developed a Ruby-based Scheduler application to automate room scheduling for university events, considering constraints like capacity, availability, and room type.",
-            "Implemented file handling with Ruby’s CSV library to read and write room reservation data, and designed algorithms for generating scheduling plans based on user input.",
-            "Ensured scheduling constraints, such as room size, computer availability, and proximity, were met for event planning, outputting results in CSV format.",
-            "Demonstrated the application’s functionality in a technical review, highlighting design decisions and efficient problem-solving approaches."
-        ],
-        tech: ["Ruby", "Git", "Linux"]
-    }
+    // {
+    //     title: "Hackathon Scheduler",
+    //     date: "February 2025",
+    //     description: [
+    //         "Developed a Ruby-based Scheduler application to automate room scheduling for university events, considering constraints like capacity, availability, and room type.",
+    //         "Implemented file handling with Ruby’s CSV library to read and write room reservation data, and designed algorithms for generating scheduling plans based on user input.",
+    //         "Ensured scheduling constraints, such as room size, computer availability, and proximity, were met for event planning, outputting results in CSV format.",
+    //         "Demonstrated the application’s functionality in a technical review, highlighting design decisions and efficient problem-solving approaches."
+    //     ],
+    //     tech: ["Ruby", "Git", "Linux"]
+    // }
 
 
 

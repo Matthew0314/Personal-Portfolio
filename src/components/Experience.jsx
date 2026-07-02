@@ -77,14 +77,13 @@ function ExperienceCard({ exp }) {
 const experiences = [
 
 {
-    title: "Undergraduate Researcher - Machine Learning",
+    title: "Machine Learning & Computer Vision Researcher",
     company: "The College of New Jersey",
     date: "Aug. 2025 - May. 2026",
     description: [
-      "Conducting undergraduate research in Human-Computer to enhance an American Sign Language (ASL) recognition system using Google MediaPipe.",
-      "Expanding recognition capabilities to include two-handed signs.",
-      "Improving existing detection features for greater accuracy and reliability.",
-      "Designing and implementing a comprehensive testing process to evaluate system performance."
+      "Conducted research on real-time American Sign Language recognition using machine learning and computer vision, including model development, evaluation, and dataset analysis.",
+      "Improved handshape classification accuracy by 20% by iteratively training and optimizing machine learning models.",
+      "Designed and implemented a testing pipeline to evaluate model performance and prediction accuracy.",
     ],
     skills: ["Machine Learning", "Python", "Data Analysis", "Computer Vision", "Research"]
   },
@@ -94,7 +93,7 @@ const experiences = [
     company: "The College of New Jersey",
     date: "Aug. 2024 - May. 2026",
     description: [
-      "Assisted students during lectures and labs with topics such as variables, control structures, object-oriented programming, and basic algorithms.",
+      "Assisted 80+ students during lectures and labs with topics such as variables, control structures, object-oriented programming, and basic algorithms.",
       "Collaborated with course instructors to deliver targeted in-class and lab assistance tailored to student needs.",
       "Enhanced personal expertise in computer science topics through teaching and peer collaboration."
     ],
@@ -102,7 +101,7 @@ const experiences = [
   },
 
   {
-    title: "Undergraduate Researcher – Virtual Reality",
+    title: "Virtual Reality Researcher",
     company: "The College of New Jersey",
     date: "Jan. 2024 – May. 2025",
     description: [
